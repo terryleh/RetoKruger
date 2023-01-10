@@ -1,0 +1,9 @@
+tabla estados
+
+
+tabla usaurios
+INSERT INTO usuarios VALUES ('1', 'clave', 'empleado', '28888888', 'eusebio', 'diaz',  'habiaunavez@gmail.com' );
+INSERT INTO usuarios VALUES ('2', 'clave', 'empleado', '25555555', 'ramiro', 'sifuentes',  'habia2veces@gmail.com' );
+
+INSERT INTO datos VALUES ('1', '1', '1960/12/12', 'avenida 8 con carrera 77', '58796325', 'Sputnik', '2021/12/15','1' );
+INSERT INTO datos VALUES ('2', '0', '1960/12/12', 'avenida 8 con carrera 77', '58796325' );

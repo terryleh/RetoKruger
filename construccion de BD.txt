@@ -1,0 +1,45 @@
+CREATE TABLE  USUARIOS (
+  "id_usuario" SERIAL NOT NULL,
+  "password" VARCHAR(45) NOT NULL,
+  "rol" VARCHAR(45) NOT NULL,
+  "cedula" INT NOT NULL,
+  "nombre" VARCHAR(45) NOT NULL,
+  "apellido" VARCHAR(45) NOT NULL,
+  "correo" VARCHAR(60) NOT NULL,
+  PRIMARY KEY ("id_usuario"));
+
+
+CREATE TABLE  DATOS (
+  "id_usuario" SERIAL NOT NULL,
+  "estado" BOOLEAN NOT NULL,
+  "fecha_nacimiento" DATE NOT NULL,
+  "direccion" VARCHAR(150) NOT NULL,
+  "telefono" NUMERIC NULL,
+  "tipo_vacuna" VARCHAR(45) NULL,
+  "fecha_vacunacion" DATE NULL,
+  "dosis" INT NULL,
+  PRIMARY KEY ("id_usuario"), 
+  CONSTRAINT "fk_USUARIOS"
+    FOREIGN KEY ("id_usuario")
+    REFERENCES USUARIOS ("id_usuario")
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
+
+
+de aqui en adelante no es base de datos
+
+CREATE TABLE  ESTADOS (
+  "estado" BOOLEAN NOT NULL,
+  "tipo_vacuna" VARCHAR(45) NOT NULL,
+  "fecha_vacunacion" DATE NULL,
+  "fecha_nacimiento" DATE NOT NULL,
+  "direccion" VARCHAR(45) NULL,
+  "telefono" NUMERIC NULL,
+  "dosis" VARCHAR(45) NULL,
+  "cedula_empleado" INT NOT NULL,
+  PRIMARY KEY ("id_estado"),
+  CONSTRAINT "fk_ESTADOS_EMPLEADOS"
+  FOREIGN KEY(cedula_empleado)
+  REFERENCES EMPLEADOS(cedula)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION);
