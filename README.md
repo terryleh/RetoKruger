@@ -29,9 +29,10 @@ Pasos
 - En la documentacion Swagger podras encontrar informacion mas detallada de los controladores y modelos de la aplicacion, el link de acceso es http://localhost:8090/swagger-ui/index.html, sin embargo recuerda q puede cambiar el puerto que utilizas en el application.properties y ahi tendrias que fijarte en acomodar el link antes compartido, a continuacion algunos ejemplos de como aparece la documentacion:
 - ![image](https://user-images.githubusercontent.com/41609652/211692143-7f6b2aa2-c015-4bf1-acb8-8c40dabb71f3.png)
 
-- 
-
 - En esta aplicacion encontraras los diferentes metodos para la creacion,lectura,borrado y actualizacion de usuarios, incluyendo busquedas por tipo de vacuna del usuario, estado,fecha de vacunacion, entre otros metodos
+- Modelo de Datos
+- ![modelo de datos](https://user-images.githubusercontent.com/41609652/211698258-d69cc3f4-42f7-4db7-9eab-dfde6e503361.png)
+
 - se recomienda utilizar la aplicacion postman, para realizar las distintas consultas de la aplicacion, ya que es un entorno mas comodo visualmente para el usuario
 
 -Como nota final se resalta que el proyecto esta sujeto a cambios, que permitan mejorar la aplicacion a futuro. Gracias
